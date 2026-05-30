@@ -27,6 +27,7 @@ The webscraper will be designed with the smallest scope possible in mind, the id
 5. Utilize text found in `Qualification` as keys in dictionary, increment counter every time key is found in other sections (see above)
 ### K Means Cluster Algorithm
 This machine learning algorithm uses euclidean cluster algorithm to group the job lisitngs based on the ranked keywords, this will then be visualized.
-1. Preclustering - psuedo supervised clustering by sectioning keywords into sections of similar frameworks, languages, concepts
+1. Preclustering - psuedo supervised clustering by sectioning keywords into sections of similar frameworks, languages, concepts, libraries, components.
     a. Creating known sections of similarty e.g. React Related to Javascript, Typescript.
     b. importing keywords from webscraper into these sections.
+2. Setting up spans of keywords and these spans will be the centroids for the job listings to cluster around.
