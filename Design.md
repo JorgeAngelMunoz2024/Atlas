@@ -35,6 +35,7 @@ This machine learning algorithm uses euclidean cluster algorithm to group the jo
 >> This question came to me because in the example below *spending score(y-axis) & Annual income (x-axis)*
 >
 > source:<https://reasonabledeviations.com/2019/10/02/k-means-in-cpp/?>
+>
 > kmeans clusters has 2 main tasks
 > - finding groups of points in a dataset such that the total variance within groups is minimised
 > - partitiohning feature space into k subsets to minimise thw within-cluster sum-of-square deviations (WCSS) which is the sum of square euclidiance disntances between each datapoint and centroid.
