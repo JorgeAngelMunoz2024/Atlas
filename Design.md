@@ -23,7 +23,7 @@ The webscraper will be designed with the smallest scope possible in mind, the id
 
 ### K-Means Cluster Algorithm
 This machine learning algorithm uses k-means algorithm to group the job lisitngs based on the ranked keywords, this will then be visualized.
-1. Preclustering - psuedo supervised clustering by sectioning keywords into sections of similar frameworks, languages, concepts, libraries, components.
+1. Preprocessing - psuedo supervised classification using naive bayesian by sectioning keywords into sections of similar frameworks, languages, concepts, libraries, components.
     - Creating known sections of similarty e.g. React Related to Javascript, Typescript.
     - importing keywords from webscraper into these sections.
 2. Setting the dimentsionality, clusters and iterations of the algorithm.
@@ -46,7 +46,7 @@ This machine learning algorithm uses k-means algorithm to group the job lisitngs
 >
 > kmeans clusters has 2 main tasks
 > - finding groups of points in a dataset such that the total variance within groups is minimised.
-> - partitioning feature space into k subsets to minimise the within-cluster sum-of-square deviations (WCSS) which is the sum of square euclidiance disntances between each datapoint and centroid.
+> - partitioning feature space into k subsets to minimise the within-cluster sum-of-square deviations (WCSS) which is the sum of square euclidian distances between each datapoint and centroid.
 > the kmeans clustering problem is a complexity of O(2^n).  
 >> #### (kmeans) Lloyd's algorithm, widely used time complexity of O(n\*k*id) space complexity of O(n+k)d
 >> n = number of points, k = clusters, i = iterations, and d = dimensions
