@@ -33,12 +33,13 @@ This machine learning algorithm uses euclidean cluster algorithm to group the jo
 >> Would we make the depth of dimension the depths of the spans?
 >> if so, we would be measureing the frequency score that is assignd to key words?
 >> This question came to me because in the example below *spending score(y-axis) & Annual income (x-axis)*
+>
 > source:<https://reasonabledeviations.com/2019/10/02/k-means-in-cpp/?>
 > kmeans clusters has 2 main tasks
 > - finding groups of points in a dataset such that the total variance within groups is minimised
 > - partitiohning feature space into k subsets to minimise thw within-cluster sum-of-square deviations (WCSS) which is the sum of square euclidiance disntances between each datapoint and centroid.
 > the kmeans clustering problem is a complexity of O(2^n)  
->> #### (kmeans) Lloyd's algorithm, widely used time complexity of O(n*\k*id) space complexity of O(n+k)d
+>> #### (kmeans) Lloyd's algorithm, widely used time complexity of O(n\*k*id) space complexity of O(n+k)d
 >> n = number of points, k = clusters, i = iterations, and d = dimensions
 >> 1. Initialize the lcusters 
 >> 2. Compute the centroid of each lcuster
