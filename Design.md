@@ -20,9 +20,20 @@ The webscraper will be designed with the smallest scope possible in mind, the id
     - Preferred 
     - Responsibilities
 5. Utilize text found in `Qualification` as keys in dictionary, increment counter every time key is found in other sections (see above)
-### K Means Cluster Algorithm
+
+### K-Means Cluster Algorithm
 This machine learning algorithm uses euclidean cluster algorithm to group the job lisitngs based on the ranked keywords, this will then be visualized.
 1. Preclustering - psuedo supervised clustering by sectioning keywords into sections of similar frameworks, languages, concepts, libraries, components.
     a. Creating known sections of similarty e.g. React Related to Javascript, Typescript.
     b. importing keywords from webscraper into these sections.
-2. Setting up spans of keywords and these spans will be the centroids for the job listings to cluster around.
+2. Setting up spans of keywords and these spans will be the centroids for the job listings to cluster around. 
+
+> ### Notes on K-Means
+>  
+> source: https://reasonabledeviations.com/2019/10/02/k-means-in-cpp/
+> kmeans clusters has 2 main tasks
+> - finding groups of points in a dataset such that the total variance within groups is minimised
+> - partitiohning feature space into k subsets to minimise thw within-cluster sum-of-square deviations (WCSS) which is the sum of square euclidiance disntances between each datapoint and centroid.
+> "the kmeans clustering problem is incredibly difficult to solve" with a complexity of O(2^n)  
+>> Lloyd's algorithm, widely used time complexity of O(n*\k*id) space complexity of O(n+k)d
+>> 
