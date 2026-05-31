@@ -24,13 +24,12 @@ The webscraper will be designed with the smallest scope possible in mind, the id
 ### K-Means Cluster Algorithm
 This machine learning algorithm uses k-means algorithm to group the job lisitngs based on the ranked keywords, this will then be visualized.
 1. Preclustering - psuedo supervised clustering by sectioning keywords into sections of similar frameworks, languages, concepts, libraries, components.
-    a. Creating known sections of similarty e.g. React Related to Javascript, Typescript.
-    b. importing keywords from webscraper into these sections.
-// 2. Setting up spans of keywords and these spans will be the centroids for the job listings to cluster around.
+    - Creating known sections of similarty e.g. React Related to Javascript, Typescript.
+    - importing keywords from webscraper into these sections.
 2. Setting the dimentsionality, clusters and iterations of the algorithm.
-    a. use the number of key words in the span as the dimensions and the respective popularity score of those keywords.
-    b. for the number of clusters we can make a guess based on the sections we create in our preclusting. 
-    c. The iterations will occur as every new entry from the web scraper iterating over the centroid positoning and relationships between the listing to create new sections.
+    - use the number of key words in the span as the dimensions and the respective popularity score of those keywords.
+    - for the number of clusters we can make a guess based on the sections we create in our preclusting. 
+    - The iterations will occur as every new entry from the web scraper iterating over the centroid positoning and relationships between the listing to create new sections.
 3. plot the output using plotly.
 
 ### Recomending a Project to Build based on Keywords
@@ -38,7 +37,9 @@ This machine learning algorithm uses k-means algorithm to group the job lisitngs
 > ### Notes on K-Means
 >>  **Questions I thought of while making these notes**
 >> Would we make the depth of dimension the depths of the spans?
+>>
 >> if so, we would be measureing the frequency score that is assignd to key words?
+>>
 >> This question came to me because in the example below *spending score(y-axis) & Annual income (x-axis)*
 >
 > source:<https://reasonabledeviations.com/2019/10/02/k-means-in-cpp/?>
