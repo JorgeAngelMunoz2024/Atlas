@@ -45,7 +45,7 @@ This machine learning algorithm uses k-means algorithm to group the job lisitngs
 >
 > kmeans clusters has 2 main tasks
 > - finding groups of points in a dataset such that the total variance within groups is minimised.
-> - partitiohning feature space into k subsets to minimise the within-cluster sum-of-square deviations (WCSS) which is the sum of square euclidiance disntances between each datapoint and centroid.
+> - partitioning feature space into k subsets to minimise the within-cluster sum-of-square deviations (WCSS) which is the sum of square euclidiance disntances between each datapoint and centroid.
 > the kmeans clustering problem is a complexity of O(2^n).  
 >> #### (kmeans) Lloyd's algorithm, widely used time complexity of O(n\*k*id) space complexity of O(n+k)d
 >> n = number of points, k = clusters, i = iterations, and d = dimensions
