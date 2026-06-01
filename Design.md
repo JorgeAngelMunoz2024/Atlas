@@ -9,12 +9,11 @@ newgrad-jobs uses a system that aggregates across multiple popular job boards, w
 ## Project Design 
 This project will feature multiple components, the first of which will be a webscraper, that applies the desired preference filters (career path and location) and is able to first aggregate the links present to collect the different jobright listings. Once the jobright listing has been 
 
-### Web Scraper 
-The webscraper will be designed with the smallest scope possible in mind, the idea behind this will be that it will execute a workflow designed below:
-1. Visit the `newgrad-jobs` website 
-2. Enter preferences (select field and area)
-3. Aggregate job links and save somewhere
-4. With aggregated job links, visit each listing and snapshot the following fields from the jobright page 
+### API_Extractor
+This will be designed with the smallest scope possible in mind, the idea behind this will be that it will execute a workflow designed below:
+1. POST the `newgrad-jobs` website 
+2. Enter preferences in the API request
+4. With aggregated job links, extract the json files 
     - Qualification 
     - Required
     - Preferred 
