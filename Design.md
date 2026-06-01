@@ -20,9 +20,14 @@ The webscraper will be designed with the smallest scope possible in mind, the id
     - Preferred 
     - Responsibilities
 5. Utilize text found in `Qualification` as keys in dictionary, increment counter every time key is found in other sections (see above)
-### K Means Cluster Algorithm
-This machine learning algorithm uses euclidean cluster algorithm to group the job lisitngs based on the ranked keywords, this will then be visualized.
-1. Preclustering - psuedo supervised clustering by sectioning keywords into sections of similar frameworks, languages, concepts, libraries, components.
-    a. Creating known sections of similarty e.g. React Related to Javascript, Typescript.
-    b. importing keywords from webscraper into these sections.
-2. Setting up spans of keywords and these spans will be the centroids for the job listings to cluster around.
+
+### K-Means Cluster Algorithm
+This machine learning algorithm uses k-means algorithm to group the job lisitngs based on the ranked keywords, this will then be visualized.
+1. Preprocessing - psuedo supervised classification using naive bayesian by sectioning keywords into sections of similar frameworks, languages, concepts, libraries, components.
+    - Creating known sections of similarty e.g. React Related to Javascript, Typescript.
+    - importing keywords from webscraper into these sections.
+2. Setting the dimentsionality, clusters and iterations of the algorithm.
+    - use the number of key words in the span as the dimensions and the respective popularity score of those keywords.
+    - for the number of clusters we can make a guess based on the sections we create in our preclusting. 
+    - The iterations will occur as every new entry from the web scraper iterating over the centroid positoning and relationships between the listing to create new sections.
+3. Use 3D space to vizualize the clusters.
